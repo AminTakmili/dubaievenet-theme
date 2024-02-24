@@ -1,7 +1,7 @@
 {
-    "name": "tailwindwp",
+    "name": "dubaievenet-theme",
     "version": "1.0.0",
-    "description": "Bootstrap, Webpack & Handlebars HTML Boilerplate Template created by Pixel Rocket",
+    "description": "Tailwind,Jquery,Webpack",
     "scripts": {
         "start": "set NODE_OPTIONS=--openssl-legacy-provider && webpack-dev-server --open",
         "build": "set NODE_OPTIONS=--openssl-legacy-provider && del-cli dist && webpack -p"
