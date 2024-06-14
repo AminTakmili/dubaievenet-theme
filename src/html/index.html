@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-{{> header/head title="Homepage" }}
+{{> header/head title="دبی ایونت, مجری فروش کنسرت های دبی" }}
 
 <body>
 	<!-- Navbar -->
@@ -8,24 +8,170 @@
 
 	<!-- Main Content -->
 	<main>
-		<div class="container bg-white mx-auto p-4">
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-				<div class="w-full h-12 bg-slate-500"></div>
-				<div class="w-full h-12 bg-slate-500"></div>
-				<div class="w-full h-12 bg-slate-500"></div>
-				<div class="w-full h-12 bg-slate-500"></div>
-				<div class="w-full h-12 bg-slate-500"></div>
-				<div class="w-full h-12 bg-slate-500"></div>
-				<div class="w-full h-12 bg-slate-500"></div> 
-				<div class="w-full h-12 bg-slate-500"></div>
+		<section id="home-slider">
+
+			<div class="container mt-8 lg:mb-12 mb-6 ">
+				<div class="swiper home-slider rounded shadow-lg">
+					<div class="swiper-wrapper ">
+						<div class="swiper-slide ">
+							<a href="#">
+								<img class="home-slider-img lg:h-auto h-48 md:h-68 sm:h-auto w-full object-cover object-center"
+									loading="lazy"
+									src="{{webRoot}}/assets/images/product/slider-1.jpg"
+									alt="">
+							</a>
+						</div>
+						<div class="swiper-slide ">
+							<a href="#">
+								<img class="home-slider-img lg:h-auto h-48 md:h-68 sm:h-auto w-full object-cover object-center"
+									loading="lazy"
+									src="{{webRoot}}/assets/images/product/slider-2.webp"
+									alt="">
+							</a>
+						</div>
+						<div class="swiper-slide ">
+							<a href="#">
+								<img class="home-slider-img lg:h-auto h-48 md:h-68 sm:h-auto w-full object-cover object-center"
+									loading="lazy"
+									src="{{webRoot}}/assets/images/product/slider-3.webp"
+									alt="">
+							</a>
+						</div>
+					</div>
+					<div class="swiper-button-next hidden lg:flex"></div>
+					<div class="swiper-button-prev -block hidden lg:flex"></div>
+					<div class="swiper-pagination bottom-0"></div>
+				</div>
 			</div>
-		   asasc
-		</div>
+		</section>
+		<!--  -->
+		<section id="events">
+			<div class="container py-4">
+				<div class="divider"></div>
+			</div>
+		</section>
+		<!-- events -->
+		<section id="events-block">
+			<div class="container">
+				<h2 class="title-theme-1 text-4xl my-12">رویدادهای پیش رو</h2>
+				<div class="grid 2xl:grid-cols-4 lg:grid-cols-3 gap-3 lg:gap-8 my-6">
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/shajarian-web.jpg" text="کنسرت همایون شجربان و انوشیروان روحانی" date="20 فرودین 1403"}}
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/ebi-web.jpg" text="کنسرت ابی" date="21 فرودین 1403"}}
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/dariush-web.jpg" text="کنسرت داریوش" date="22 فرودین 1403" }}
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/max-amini-web.jpg" text="کنسرت خنده مکس امینی" date="23 فرودین 1403" }}
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/moein-web.jpg" text="کنسرت معین" date="23 فرودین 1403" }}
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/googoosh-web.jpg" text="کنسرت گوگوش  " date="24 فرودین 1403" }}
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/max-amini-web.jpg" text="کنسرت خنده مکس امینی" date="20 فرودین 1403" }}
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/dariush-web.jpg" text="کنسرت داریوش" date="20 فرودین 1403" }}
+				</div>
+			</div>
+		</section>
+		<!-- end events -->
+		<!--  -->
+		<section id="categories" class="bg-white py-8">
+			<div class="container">
+				<h2 class="title-theme-1 text-4xl my-12"> محبوترین خواننده ها </h2>
+				<div class="swiper list-of-singers py-4 position-relative">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide w-36 mb-6"> {{> cards/singer-card title="ابی" img="/assets/images/singer/ebi.jpg" }} </div>
+						<div class="swiper-slide w-36 mb-6"> {{> cards/singer-card title="گوگوش" img="/assets/images/singer/googoosh.avif" }} </div>
+						<div class="swiper-slide w-36 mb-6"> {{> cards/singer-card title="همایون شجریان" img="/assets/images/singer/Homayoun.jpg" }} </div>
+						<div class="swiper-slide w-36 mb-6"> {{> cards/singer-card title="رضا صادقی" img="/assets/images/singer/images.jpg" }} </div>
+						<div class="swiper-slide w-36 mb-6"> {{> cards/singer-card title="شادمهر عقیلی" img="/assets/images/singer/shadmehr.jpg" }} </div>
+						<div class="swiper-slide w-36 mb-6"> {{> cards/singer-card title="آرش" img="/assets/images/singer/arash.jpg" }} </div>
+						<div class="swiper-slide w-36 mb-6"> {{> cards/singer-card title="رضا صادقی" img="/assets/images/singer/images.jpg" }} </div>
+						<div class="swiper-slide w-36 mb-6"> {{> cards/singer-card title="شادمهر عقیلی" img="/assets/images/singer/shadmehr.jpg" }} </div>
+						<div class="swiper-slide w-36 mb-6"> {{> cards/singer-card title="آرش" img="/assets/images/singer/arash.jpg" }} </div>
+					</div>
+					<div class="swiper-pagination bottom-0"></div>
+				</div>
+			</div>
+		</section>
+		<!--  -->
+
+		<!-- popular singer -->
+		<section id="categories">
+			<div class="container">
+				<h2 class="title-theme-1 text-4xl my-12"> محبوترین شهرها </h2>
+				<div class="swiper list-of-city py-4 position-relative">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide w-64 mb-6"> {{> cards/city-card title="استانبول" img="/assets/images/city/istanbul.jpg" }} </div>
+						<div class="swiper-slide w-64 mb-6"> {{> cards/city-card title="دبی" img="/assets/images/city/dubai.webp" }} </div>
+						<div class="swiper-slide w-64 mb-6"> {{> cards/city-card title="آنتالیا" img="/assets/images/city/antalya.jpg" }} </div>
+						<div class="swiper-slide w-64 mb-6"> {{> cards/city-card title="وان" img="/assets/images/city/turkey_wan.jpg" }} </div>
+						<div class="swiper-slide w-64 mb-6"> {{> cards/city-card title="تفلیس" img="/assets/images/city/tbilisip.webp" }} </div>
+						<div class="swiper-slide w-64 mb-6"> {{> cards/city-card title="ایروان" img="/assets/images/city/Yerevan.jpg" }} </div>
+						<div class="swiper-slide w-64 mb-6"> {{> cards/city-card title="وان" img="/assets/images/city/turkey_wan.jpg" }} </div>
+						<div class="swiper-slide w-64 mb-6"> {{> cards/city-card title="تفلیس" img="/assets/images/city/tbilisip.webp" }} </div>
+						<div class="swiper-slide w-64 mb-6"> {{> cards/city-card title="ایروان" img="/assets/images/city/Yerevan.jpg" }} </div>
+					</div>
+					<div class="swiper-pagination bottom-0"></div>
+				</div>
+			</div>
+		</section>
+		<!-- popular city -->
+
+
+		<!-- contact Us -->
+		<section class="my-12 bg-white py-8">
+			<div class="container">
+				<div class="alert-success">
+					<div class="flex md:flex-row flex-col md:items-center items-start justify-between ">
+						<p>جهت رزور و چک کردن تاریخ و قیمت لطفا در واتس اپ پیام دهید. </p>
+						<a href="https://wa.me/+989365804805" class="bg-green-700 text-white rounded px-4 py-2 shadow-xl hover:bg-green-800 flex flex-row items-center justify-center gap-2 mt-3 md:mt-0 w-full md:w-auto">
+							<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="23.976550792699808" height="24" x="0" y="0" viewBox="0 0 682 682.667" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path fill-rule="evenodd" d="M544.387 93.008C484.512 33.063 404.883.035 320.05 0 145.246 0 2.98 142.262 2.91 317.113c-.024 55.895 14.577 110.457 42.331 158.551L.25 640l168.121-44.102c46.324 25.27 98.477 38.586 151.55 38.602h.134c174.785 0 317.066-142.273 317.132-317.133.036-84.742-32.921-164.418-92.8-224.36zM320.05 580.94h-.11c-47.296-.02-93.683-12.73-134.16-36.742l-9.62-5.715-99.766 26.172 26.628-97.27-6.27-9.972c-26.386-41.969-40.32-90.476-40.296-140.281.055-145.332 118.305-263.57 263.7-263.57 70.406.023 136.59 27.476 186.355 77.3s77.156 116.051 77.133 186.485C583.582 462.69 465.34 580.94 320.05 580.94zm144.586-197.418c-7.922-3.968-46.883-23.132-54.149-25.78-7.258-2.645-12.547-3.962-17.824 3.968-5.285 7.93-20.469 25.781-25.094 31.066-4.625 5.29-9.242 5.953-17.168 1.985-7.925-3.965-33.457-12.336-63.726-39.332-23.555-21.012-39.457-46.961-44.082-54.89-4.617-7.938-.04-11.813 3.476-16.173 8.578-10.652 17.168-21.82 19.809-27.105 2.644-5.29 1.32-9.918-.664-13.883-1.977-3.965-17.824-42.969-24.426-58.84-6.437-15.445-12.965-13.36-17.832-13.601-4.617-.231-9.902-.278-15.187-.278-5.282 0-13.868 1.98-21.133 9.918-7.262 7.934-27.73 27.102-27.73 66.106s28.394 76.683 32.355 81.972c3.96 5.29 55.879 85.328 135.367 119.649 18.906 8.172 33.664 13.043 45.176 16.695 18.984 6.031 36.254 5.18 49.91 3.14 15.226-2.277 46.879-19.171 53.488-37.68 6.602-18.51 6.602-34.374 4.617-37.683-1.976-3.304-7.261-5.285-15.183-9.254zm0 0" fill="#FFFFFF" opacity="1" data-original="#000000" class=""></path></g></svg>
+							<span>
+								تماس در واتس‌اپ
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- end contact us -->
+		<section id="categories" class="pb-12 pt-2">
+			<div class="container">
+				<h2 class="title-theme-1 text-4xl my-12"> چرا همه ما را انتخاب میکنند </h2>
+				<div class="grid 2xl:grid-cols-4 lg:grid-cols-3 gap-3 lg:gap-8 my-6">
+					<div class="why-choose-us-itemn">
+						<img class="w-8 h-8 object-contain object-center " src="{{ webRoot }}/assets/images/icons/secure-checkout.svg" alt="">
+						<h2 class="title text-base font-semibold mt-2 text-gray-500">تسویه حساب امن </h2>
+						<p class="dsec text-sm text-gray-700 font-medium mt-1">پرداخت سریع و مطمئن</p>
+					</div>
+					<div class="why-choose-us-itemn">
+						<img class="w-8 h-8 object-contain object-center " src="{{ webRoot }}/assets/images/icons/instant-confirmation.svg" alt="">
+						<h2 class="title text-base font-semibold mt-2 text-gray-500">  تایید فوری </h2>
+						<p class="dsec text-sm text-gray-700 font-medium mt-1"> گزینه های تضمین بازپرداخت </p>
+					</div>
+					<div class="why-choose-us-itemn">
+						<img class="w-8 h-8 object-contain object-center " src="{{ webRoot }}/assets/images/icons/official-ticket-seller.svg" alt="">
+						<h2 class="title text-base font-semibold mt-2 text-gray-500"> فروشنده رسمی بلیط </h2>
+						<p class="dsec text-sm text-gray-700 font-medium mt-1"> استفاده شده توسط بیش از  صدها نفر</p>
+					</div>
+					<div class="why-choose-us-itemn">
+						<img class="w-8 h-8 object-contain object-center " src="{{ webRoot }}/assets/images/icons/customer-service.svg" alt="">
+						<h2 class="title text-base font-semibold mt-2 text-gray-500">  خدمات مشتریان 24/7 </h2>
+						<p class="dsec text-sm text-gray-700 font-medium mt-1"> پشتیبانی واقعی پس از فروش </p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- content -->
+		<section id="aboutus" class="bg-white py-8"  >
+			<div class="container">
+				
+				<div class="html-content">
+					<h2> درباره دبی ایونت تیکت </h2>
+					<p>بدیهی است که دبی شهری کسل کننده نیست که مهمانان در آن به دنبال سرگرمی ها و رویدادها باشند. با این حال، گم شدن در انواع پیشنهادات آسان است. ممکن است تعجب کنید که چگونه بفهمید بهترین مکان های تفریحی دبی که باید از آنها بازدید کنید.</p>
+					<p>ما بر این باوریم که وب‌سایت فهرست رویدادهای آینده ما می‌تواند برای شما مفید باشد تا پیشنهاداتی داشته باشید و فعالیت‌هایی را انتخاب کنید که مطابق با اولویت‌های شما باشد، با بودجه شما هماهنگ باشد، و با برنامه‌تان مطابقت داشته باشد.</p>
+					<p>dubaievenet.ir راهنمای خدمات سرگرمی در دبی (امارات متحده عربی) است که می تواند به شما کمک کند تا آنچه را که در شهر می گذرد و انتخاب درست انجام دهید. ما دائماً آخرین سرگرمی‌های داخلی، نمایش‌های اوقات فراغت زنده، کنسرت‌ها و دیگر سرگرمی‌ها را در منطقه پیگیری می‌کنیم و بلافاصله آنها را در وب‌سایت رزرو بلیط رویداد آنلاین خود منتشر می‌کنیم.</p>
+					<p>ما در تلاش هستیم تا جذاب ترین تجربه شهر را برای بازدیدکنندگان دبی فراهم کنیم و همچنین ارزان ترین مکان برای خرید بلیط کنسرت باشیم. با خرید بلیط رویداد در dubaievenet.ir در زمان، پول و تلاش خود صرفه جویی کنید.</p>
+				</div>
+			</div>
+		</section>
+		
 	</main>
-	<!-- /Main Content -->
-
-
-	
 	<!-- Footer -->
 	{{> footer/footer }}
 </body>

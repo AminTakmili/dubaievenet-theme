@@ -1,3 +1,18 @@
+//tailwindcss
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+
+
+//theme
+@import 'fonts';
+@import 'components/public';
+@import 'components/header';
+@import 'components/home';
+@import 'components/products';
+@import 'components/footer';
+@import 'components/categories';
+
+
+@import '~swiper/swiper-bundle.min.css';

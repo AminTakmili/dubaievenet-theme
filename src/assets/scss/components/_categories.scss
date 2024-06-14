@@ -1,0 +1,24 @@
+@layer components {
+    .city-card{
+        @apply flex flex-col justify-start items-center;
+        .img{
+            img{
+                @apply w-64 h-36 rounded-xl object-cover object-center shadow-lg ;
+            }
+        }
+        .name{
+            @apply text-secondary-900 text-center font-semibold mt-4 text-xl;
+        }
+    }
+    .singer-card{
+        @apply flex flex-col justify-start items-center;
+        .img{
+            img{
+                @apply w-36 h-36 rounded-full object-cover object-center shadow-lg  ;
+            }
+        }
+        .name{
+            @apply text-secondary-900 text-center font-semibold mt-4 text-xl;
+        }
+    }
+}

@@ -1,4 +1,83 @@
 
+<footer class="pt-12 border-t border-gray-200 bg-white">
+     <div class="container">
+        <div class="grid grid-cols-9 mb-8">
+            <div class="item col-span-3">
+                <a href="#"><img class="h-12" src="{{webRoot}}/assets/images/logo.png" alt="logo"></a>
+                <p class="text-sm text-gray-700">پلتفرم فروش بلیط کنسرت ها و رویدادهای بین المللی ایرانیان</p>
+            </div>
+            <div class="item col-span-1">
+                <h2 class="text-sm font-semibold text-gray-800 mb-4">لینک های مرتبط</h2>
+                <ul>
+                    <li><a class="text-gray-500 hover:text-secondary font-medium text-xs mb-2 block" href="#">لینک</a></li>
+                    <li><a class="text-gray-500 hover:text-secondary font-medium text-xs mb-2 block" href="#">لینک</a></li>
+                    <li><a class="text-gray-500 hover:text-secondary font-medium text-xs mb-2 block" href="#">لینک</a></li>
+                    <li><a class="text-gray-500 hover:text-secondary font-medium text-xs mb-2 block" href="#">لینک</a></li>
+                    <li><a class="text-gray-500 hover:text-secondary font-medium text-xs mb-2 block" href="#">لینک</a></li>
+                </ul>
+            </div>
+            <div class="item col-span-2">
+                <h2 class="text-sm font-semibold text-gray-800 mb-4">لینک های مرتبط</h2>
+                <ul>
+                    <li><a class="text-gray-500 hover:text-secondary font-medium text-xs mb-2 block" href="#">لینک</a></li>
+                    <li><a class="text-gray-500 hover:text-secondary font-medium text-xs mb-2 block" href="#">لینک</a></li>
+                    <li><a class="text-gray-500 hover:text-secondary font-medium text-xs mb-2 block" href="#">لینک</a></li>
+                    <li><a class="text-gray-500 hover:text-secondary font-medium text-xs mb-2 block" href="#">لینک</a></li>
+                    <li><a class="text-gray-500 hover:text-secondary font-medium text-xs mb-2 block" href="#">لینک</a></li>
+                </ul>
+            </div>
+            <div class="item col-span-2">
+                <p class="text-sm text-gray-700">آیا سوالی دارید ؟</p>
+                <p class="text-sm text-gray-700">لطفا با ما تماس بگیرید</p>
+                <div class="flex flex-row gap-x-2 my-3">
+                    <a href="#" title="whatsApp" class="bg-[#25D366] text-white p-2 rounded-full fill-white">{{> svgs/whatsapp  }}</a>
+                    <a href="#" title="onlineChat" class="flex flex-row items-center justify-between px-4 py-1 rounded-xl border border-secondary-600 text-secondary-600 gap-x-2 ">
+                        {{> svgs/chat  }}
+                        <span class="text-sm">تماس با پشتیبان</span>
+                    </a>
+                </div>
+            </div>
+            <div class="item col-span-1">
+                <p class="mb-3 text-sm text-gray-700">فروش آنلاین تیکت </p>
+                <a href="#" class="block hover:text-secondary mb-3 text-2xl font-semibold text-gray-700 text-right" dir="ltr">+982190071717</a>
+                <p class="mb-3 text-xs text-gray-700">شنبه تا پنج شنبه از ساعت 9 الی - 22</p>
+            </div>
+            
+        </div>
+        <!-- power by -->
+         <div class="flex flex-row items-center justify-between py-4 border-t border-t-gray-200">
+            <p class="text-gray-600">تمام حقوق مادی و معنوی برای دبی ایونت محفوظ است</p>
+            <div class="social-media">
+                <ul>
+                    <li><a title="telegram" href=""></a></li>
+                    <li><a title="instagram" href=""></a></li>
+                    <li><a title="whatsApp" href="" class="fill-gray-600">{{> svgs/whatsapp  }}</a></li>
+                    <li><a title="phone" href=""></a></li>
+                    <li><a title="facebook" href=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--<section class="bg-primary-800 text-white "> 
+        <div class="container py-6">
+            <div class="flex md:flex-row flex-col items-center justify-between">
+                <p class="text-sm mb-0">تمام حقوق مادی و معنوی برای دبی ایونت محفوظ است.</p>
+                <div class="list flex flex-row items-center justify-end gap-6 mt-6 md:mt-0">
+                    <a href="https://wa.me/+989365804805">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" x="0" y="0" viewBox="0 0 682 682.667" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path fill-rule="evenodd" d="M544.387 93.008C484.512 33.063 404.883.035 320.05 0 145.246 0 2.98 142.262 2.91 317.113c-.024 55.895 14.577 110.457 42.331 158.551L.25 640l168.121-44.102c46.324 25.27 98.477 38.586 151.55 38.602h.134c174.785 0 317.066-142.273 317.132-317.133.036-84.742-32.921-164.418-92.8-224.36zM320.05 580.94h-.11c-47.296-.02-93.683-12.73-134.16-36.742l-9.62-5.715-99.766 26.172 26.628-97.27-6.27-9.972c-26.386-41.969-40.32-90.476-40.296-140.281.055-145.332 118.305-263.57 263.7-263.57 70.406.023 136.59 27.476 186.355 77.3s77.156 116.051 77.133 186.485C583.582 462.69 465.34 580.94 320.05 580.94zm144.586-197.418c-7.922-3.968-46.883-23.132-54.149-25.78-7.258-2.645-12.547-3.962-17.824 3.968-5.285 7.93-20.469 25.781-25.094 31.066-4.625 5.29-9.242 5.953-17.168 1.985-7.925-3.965-33.457-12.336-63.726-39.332-23.555-21.012-39.457-46.961-44.082-54.89-4.617-7.938-.04-11.813 3.476-16.173 8.578-10.652 17.168-21.82 19.809-27.105 2.644-5.29 1.32-9.918-.664-13.883-1.977-3.965-17.824-42.969-24.426-58.84-6.437-15.445-12.965-13.36-17.832-13.601-4.617-.231-9.902-.278-15.187-.278-5.282 0-13.868 1.98-21.133 9.918-7.262 7.934-27.73 27.102-27.73 66.106s28.394 76.683 32.355 81.972c3.96 5.29 55.879 85.328 135.367 119.649 18.906 8.172 33.664 13.043 45.176 16.695 18.984 6.031 36.254 5.18 49.91 3.14 15.226-2.277 46.879-19.171 53.488-37.68 6.602-18.51 6.602-34.374 4.617-37.683-1.976-3.304-7.261-5.285-15.183-9.254zm0 0" fill="#FFFFFF" opacity="1" data-original="#000000" class=""></path></g></svg>
+                    </a>
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" x="0" y="0" viewBox="0 0 511 511.9" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M510.95 150.5c-1.2-27.2-5.598-45.898-11.9-62.102-6.5-17.199-16.5-32.597-29.6-45.398-12.802-13-28.302-23.102-45.302-29.5-16.296-6.3-34.898-10.7-62.097-11.898C334.648.3 325.949 0 256.449 0s-78.199.3-105.5 1.5c-27.199 1.2-45.898 5.602-62.097 11.898-17.204 6.5-32.602 16.5-45.403 29.602-13 12.8-23.097 28.3-29.5 45.3-6.3 16.302-10.699 34.9-11.898 62.098C.75 177.801.449 186.5.449 256s.301 78.2 1.5 105.5c1.2 27.2 5.602 45.898 11.903 62.102 6.5 17.199 16.597 32.597 29.597 45.398 12.801 13 28.301 23.102 45.301 29.5 16.3 6.3 34.898 10.7 62.102 11.898 27.296 1.204 36 1.5 105.5 1.5s78.199-.296 105.5-1.5c27.199-1.199 45.898-5.597 62.097-11.898a130.934 130.934 0 0 0 74.903-74.898c6.296-16.301 10.699-34.903 11.898-62.102 1.2-27.3 1.5-36 1.5-105.5s-.102-78.2-1.3-105.5zm-46.098 209c-1.102 25-5.301 38.5-8.801 47.5-8.602 22.3-26.301 40-48.602 48.602-9 3.5-22.597 7.699-47.5 8.796-27 1.204-35.097 1.5-103.398 1.5s-76.5-.296-103.403-1.5c-25-1.097-38.5-5.296-47.5-8.796C94.551 451.5 84.45 445 76.25 436.5c-8.5-8.3-15-18.3-19.102-29.398-3.5-9-7.699-22.602-8.796-47.5-1.204-27-1.5-35.102-1.5-103.403s.296-76.5 1.5-103.398c1.097-25 5.296-38.5 8.796-47.5C61.25 94.199 67.75 84.1 76.352 75.898c8.296-8.5 18.296-15 29.398-19.097 9-3.5 22.602-7.7 47.5-8.801 27-1.2 35.102-1.5 103.398-1.5 68.403 0 76.5.3 103.403 1.5 25 1.102 38.5 5.3 47.5 8.8 11.097 4.098 21.199 10.598 29.398 19.098 8.5 8.301 15 18.301 19.102 29.403 3.5 9 7.699 22.597 8.8 47.5 1.2 27 1.5 35.097 1.5 103.398s-.3 76.301-1.5 103.301zm0 0" fill="#FFFFFF" opacity="1" data-original="#000000" class=""></path><path d="M256.45 124.5c-72.598 0-131.5 58.898-131.5 131.5s58.902 131.5 131.5 131.5c72.6 0 131.5-58.898 131.5-131.5s-58.9-131.5-131.5-131.5zm0 216.8c-47.098 0-85.302-38.198-85.302-85.3s38.204-85.3 85.301-85.3c47.102 0 85.301 38.198 85.301 85.3s-38.2 85.3-85.3 85.3zM423.852 119.3c0 16.954-13.747 30.7-30.704 30.7-16.953 0-30.699-13.746-30.699-30.7 0-16.956 13.746-30.698 30.7-30.698 16.956 0 30.703 13.742 30.703 30.699zm0 0" fill="#FFFFFF" opacity="1" data-original="#000000" class=""></path></g></svg>
+                    </a>
+                    <a href="https://wa.me/+989365804805">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" x="0" y="0" viewBox="0 0 384 384" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M353.188 252.052c-23.51 0-46.594-3.677-68.469-10.906-10.719-3.656-23.896-.302-30.438 6.417l-43.177 32.594c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208 11.167-20.198 7.635-31.448-7.26-21.99-10.948-45.063-10.948-68.583C132.146 13.823 118.323 0 101.333 0h-70.52C13.823 0 0 13.823 0 30.813 0 225.563 158.438 384 353.188 384c16.99 0 30.813-13.823 30.813-30.813v-70.323c-.001-16.989-13.824-30.812-30.813-30.812z" fill="#FFFFFF" opacity="1" data-original="#000000" class=""></path></g></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section> -->
+</footer>
 <!-- Vendor JS -->
 <script src="{{webRoot}}/assets/js/vendor.bundle.js"></script>
 
