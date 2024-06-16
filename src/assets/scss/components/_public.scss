@@ -175,6 +175,13 @@
             @apply  relative block w-12 h-[2px] bg-primary-900/10 mt-3 rounded-sm mx-auto
         } 
     }
+    .title-theme-2{
+        @apply text-primary-900 text-right;
+        &:after{
+            content: "";
+            @apply  relative block w-12 h-[2px] bg-primary-900/10 mt-3 rounded-sm ml-auto
+        } 
+    }
 
     .divider{
         @apply h-[1px] w-full bg-gradient-to-r from-primary-950/10 via-primary-950/40 to-primary-950/10;

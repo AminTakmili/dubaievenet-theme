@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+{{> header/head title="دبی ایونت, مجری فروش کنسرت های دبی" }}
+
+<body>
+	<!-- Navbar -->
+	{{> header/navbar }}
+
+	<!-- Main Content -->
+	<main >
+		<!--  breadCrumbs -->
+		<section>{{> cards/breadCrumbs }}</section>
+		<!--  /breadCrumbs -->
+		<section id="product-category" class="bg-white py-4">
+			<div class="container">
+				<h1 class="title-theme-2 text-4xl my-8"> دسته بندی ها </h1>
+				<!--  -->
+				<div class="grid 2xl:grid-cols-4 lg:grid-cols-3 gap-3 lg:gap-8 my-6">
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/shajarian-web.jpg" text="کنسرت همایون شجربان و انوشیروان روحانی" date="20 فرودین 1403"}}
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/ebi-web.jpg" text="کنسرت ابی" date="21 فرودین 1403"}}
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/dariush-web.jpg" text="کنسرت داریوش" date="22 فرودین 1403" }}
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/max-amini-web.jpg" text="کنسرت خنده مکس امینی" date="23 فرودین 1403" }}
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/moein-web.jpg" text="کنسرت معین" date="23 فرودین 1403" }}
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/googoosh-web.jpg" text="کنسرت گوگوش  " date="24 فرودین 1403" }}
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/max-amini-web.jpg" text="کنسرت خنده مکس امینی" date="20 فرودین 1403" }}
+					{{> cards/event-card img="{{webRoot}}/assets/images/product/dariush-web.jpg" text="کنسرت داریوش" date="20 فرودین 1403" }}
+				</div>
+				<!--  -->
+				{{> cards/wocommerce-pagination }}
+			
+				<div class="divider mt-6 mb-4 "></div>
+			
+				<!-- catgeory description -->
+				<div class="list-show-more transition duration-300">
+					<div class="list-content max-h-60 transition duration-300">
+						{{> cards/category-description  }}
+					</div>
+					<button class="list-show-more-btn">
+						<span class="show">نمایش بیشتر</span>
+						<span class="hide">بستن</span>
+						<i class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+								<path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
+							</svg>
+						</i>
+					</button>
+				</div>
+			</div>
+		
+		</section>
+
+	</main>
+	<!-- Footer -->
+	{{> footer/footer }}
+</body>
+
+</html>

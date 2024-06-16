@@ -39,9 +39,9 @@ Swiper.use([Navigation, Pagination, Autoplay, Scrollbar, Thumbs,EffectCards]);
 
     const HomeSlider = new Swiper(".home-slider", {
 
-        effect: "cards",
+        // effect: "cards",
         perSlideRotate: 4,
-        spaceBetween: 30,
+        spaceBetween: 10,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev"
@@ -53,6 +53,22 @@ Swiper.use([Navigation, Pagination, Autoplay, Scrollbar, Thumbs,EffectCards]);
         autoplay: {
             delay: 4000
         },
+    });
+    const productSlider = new Swiper(".product-slider", {
+
+        perSlideRotate: 4,
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        // autoplay: {
+        //     delay: 4000
+        // },
     });
 
 })();

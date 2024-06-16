@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+{{> header/head title="هنرمندان" }}
+
+<body>
+	<!-- Navbar -->
+	{{> header/navbar }}
+	<!-- Main Content -->
+	<main>
+        <!--  breadCrumbs -->
+        <section>{{> cards/breadCrumbs  }}</section>
+		<!--  /breadCrumbs -->
+        <section id="artists" class="bg-white py-4">
+            <div class="container pb-8">
+                <h1 class="title-theme-2 text-4xl my-8"> خواننده ها </h1>
+                <div class="grid 2xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-2 lg:gap-8 my-6">
+                   {{> cards/singer-card title="ابی" img="/assets/images/singer/ebi.jpg" }}
+                     {{> cards/singer-card title="گوگوش" img="/assets/images/singer/googoosh.avif" }} 
+                     {{> cards/singer-card title="همایون شجریان" img="/assets/images/singer/Homayoun.jpg" }} 
+                     {{> cards/singer-card title="رضا صادقی" img="/assets/images/singer/images.jpg" }} 
+                     {{> cards/singer-card title="شادمهر عقیلی" img="/assets/images/singer/shadmehr.jpg" }} 
+                     {{> cards/singer-card title="آرش" img="/assets/images/singer/arash.jpg" }} 
+                     {{> cards/singer-card title="رضا صادقی" img="/assets/images/singer/images.jpg" }} 
+                     {{> cards/singer-card title="شادمهر عقیلی" img="/assets/images/singer/shadmehr.jpg" }} 
+                     {{> cards/singer-card title="آرش" img="/assets/images/singer/arash.jpg" }} 
+                     {{> cards/singer-card title="رضا صادقی" img="/assets/images/singer/images.jpg" }} 
+                     {{> cards/singer-card title="شادمهر عقیلی" img="/assets/images/singer/shadmehr.jpg" }} 
+                     {{> cards/singer-card title="آرش" img="/assets/images/singer/arash.jpg" }} 
+                     
+                </div>
+                <!-- pagination -->
+                <div class="py-4">
+                    {{> cards/wocommerce-pagination }}
+                </div>
+                <!-- /pagination -->
+            </div>
+        </section>
+        
+	</main>
+	<!-- Footer -->
+	{{> footer/footer }}
+</body>
+
+</html>

@@ -33,6 +33,7 @@ const paths = {
     css: './src/assets/css',
     fonts: './src/assets/fonts',
     js: './src/assets/js',
+    otherjs: './src/assets/other-js',
     favicon: './src/assets/favicon',
   },
   dist: {
@@ -40,6 +41,7 @@ const paths = {
     css: './assets/css',
     fonts: './assets/fonts',
     js: './assets/js',
+    otherjs: './assets/other-js',
     favicon: './assets/favicon',
   }
 }
@@ -149,6 +151,11 @@ const wPackConfig = {
       {
         from: paths.src.favicon,
         to: paths.dist.favicon,
+        noErrorOnMissing: true
+      },
+      {
+        from: paths.src.otherjs,
+        to: paths.dist.otherjs,
         noErrorOnMissing: true
       }
         // ,

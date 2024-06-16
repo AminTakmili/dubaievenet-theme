@@ -1,0 +1,249 @@
+@layer components {
+   
+    #comments {
+        .commentlist {
+            @apply p-0;
+
+            .review {
+
+                .comment_container {
+                    @apply border border-gray-200 p-4 rounded-lg mb-6 bg-white;
+
+                    img,
+                    .woocommerce-review__verified,
+                    .woocommerce-review__dash,
+                    .woocommerce-review__published-date,
+                    .star-rating {
+                        @apply hidden;
+                    }
+
+                    .woocommerce-review__author {
+                        @apply font-semibold text-secondary-900/75;
+                        &:before {
+                            content: "";
+                            width: 40px;
+                            height: 40px;
+                            display: inline-block;
+                            vertical-align: middle;
+                            background-image: url("../images/user.png");
+                            background-size: cover;
+                            background-position: center;
+                            border-radius: 50%;
+                            margin-inline-start: 10px;
+
+                        }
+
+                    }
+
+                    .description {
+                        @apply pt-4 mt-4 border-t border-gray-200;
+
+                    }
+
+                }
+
+                .children {
+                    .comment {
+                        @apply lg:mr-8 mr-4;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .woocommerce-Reviews-title {
+        @apply hidden;
+    }
+    .woocommerce-pagination {
+        .page-numbers {
+            @apply flex flex-row items-start justify-start gap-x-2;
+
+            li {
+                @apply block;
+
+                .page-numbers {
+                    @apply p-0 m-0 border border-primary text-primary rounded-full w-9 h-9 flex flex-col items-center justify-center;
+
+                    &.current {
+
+                        @apply bg-primary text-white font-bold cursor-not-allowed;
+                    }
+                }
+
+                &:hover {
+                    .page-numbers:not(.current) {
+                        @apply bg-primary-50 text-primary font-bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .pagination {
+        .woocommerce-pagination {
+            ul {
+                @apply isolate flex flex-row -space-x-px rounded-md ;
+
+                li {
+                    .page-numbers {
+                        @apply relative inline-flex items-center px-4 py-2 text-sm font-semibold text-primary ring-1 ring-inset ring-gray-300 hover:bg-primary-100 focus:z-20 focus:outline-offset-0;
+
+                        &.current {
+                            @apply bg-primary px-4 py-2 text-sm font-semibold text-white ring-1 ring-inset ring-primary;
+                        }
+                    }
+
+                    &:first-child {
+
+                        .page-numbers,
+                        .current {
+                            @apply rounded-full;
+                        }
+                    }
+
+                    &:last-child {
+
+                        .page-numbers,
+                        .current {
+                            @apply rounded-full;
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+    #review_form {
+
+        .comment-form-comment,
+        .comment-form-author,
+        .comment-form-email {
+            @apply mb-3;
+
+            label {
+                @apply block mb-2 font-medium;
+
+                span {}
+            }
+        }
+
+
+        textarea {
+            @apply w-full border border-gray-300 rounded focus:outline-2 focus:outline-primary-200 p-2 h-32;
+        }
+
+        .comment-form-author,
+        .comment-form-email {
+
+            &.comment-form-email {
+                @apply lg:float-left lg:pr-4;
+            }
+
+            @apply w-1/2 inline-block;
+
+            input {
+                @apply w-full border border-gray-300 rounded focus:outline-2 focus:outline-primary-200 p-2;
+            }
+        }
+
+        .form-submit {
+            clear: both;
+            input {
+                @apply btn bg-primary text-white lg:my-6 mt-6 border-primary border hover:text-primary hover:bg-white lg:w-auto w-full cursor-pointer;
+            }
+        }
+
+        .comment-reply-title {
+            @apply text-2xl font-bold text-primary mb-4 mt-12 block;
+        }
+
+        .comment-notes {
+            @apply mb-4;
+
+            .email-notes {
+                @apply text-lg font-semibold text-gray-600;
+            }
+
+            .required-field-message {
+                @apply text-sm text-gray-400 block;
+            }
+        }
+
+    }
+
+}
+
+.comment-form-rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+
+    .stars {
+        margin-bottom: 0 !important;
+        margin-right: 20px;
+
+        span {
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        a {
+            color: transparent;
+            width: 20px;
+            display: inline-block;
+            position: relative;
+
+            &:before {
+                content: "";
+                background-image: url("../images/star.png");
+                background-position: 0% 100%;
+                background-size: 20px;
+                height: 20px;
+                width: 20px;
+                display: inline-block;
+                position: absolute;
+                line-height: 2;
+            }
+
+
+            &.active~a {
+                &:before {
+                    font-weight: normal;
+                    background-position: 0% 0;
+                    color: #5a5a5a;
+                }
+            }
+        }
+
+        &:hover {
+            a {
+                &:before {
+                    content: "";
+                    background-image: url("../images/star.png");
+                    background-position: 0% 100;
+                    font-weight: 900 !important;
+                    color: #FFBF00 !important;
+                    display: inline-block;
+                    position: absolute;
+                    line-height: 2;
+                }
+
+                &:hover {
+                    &~a {
+                        &:before {
+                            content: "";
+                            background-position: 0% 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

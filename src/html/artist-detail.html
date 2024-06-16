@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+{{> header/head title="دبی ایونت, مجری فروش کنسرت های دبی" }}
+
+<body>
+	<!-- Navbar -->
+	{{> header/navbar }}
+
+	<!-- Main Content -->
+	<main>
+		<!--  breadCrumbs -->
+		<section>{{> cards/breadCrumbs }}</section>
+		<!--  /breadCrumbs -->
+		<section id="product-category" class="bg-white py-4">
+			<div class="container">
+                <h1 class="title-theme-2 text-4xl mt-8"> لیست کنسرت های همایون شجریان </h1>
+				<div class="grid lg:grid-cols-4 gap-4">
+                    <div class="col-span-3">
+                        <!--  -->
+                        <div class="grid 2xl:grid-cols-3 lg:grid-cols-2 gap-3 lg:gap-8 my-6">
+                            {{> cards/event-card img="{{webRoot}}/assets/images/product/shajarian-web.jpg" text="کنسرت همایون شجربان و انوشیروان روحانی" date="20 فرودین 1403"}}
+                            {{> cards/event-card img="{{webRoot}}/assets/images/product/shajarian-web.jpg" text="کنسرت همایون شجربان و انوشیروان روحانی" date="20 فرودین 1403"}}
+                            {{> cards/event-card img="{{webRoot}}/assets/images/product/shajarian-web.jpg" text="کنسرت همایون شجربان و انوشیروان روحانی" date="20 فرودین 1403"}}
+                            {{> cards/event-card img="{{webRoot}}/assets/images/product/shajarian-web.jpg" text="کنسرت همایون شجربان و انوشیروان روحانی" date="20 فرودین 1403"}}
+                            {{> cards/event-card img="{{webRoot}}/assets/images/product/shajarian-web.jpg" text="کنسرت همایون شجربان و انوشیروان روحانی" date="20 فرودین 1403"}}
+                            {{> cards/event-card img="{{webRoot}}/assets/images/product/shajarian-web.jpg" text="کنسرت همایون شجربان و انوشیروان روحانی" date="20 فرودین 1403"}}
+                        </div>
+                        <!--  -->
+                    </div>
+                    <div class="col-span-1">
+                        {{> cards/sidebar-singer }}
+                        {{> cards/about-singer }}
+                    </div>
+                </div>
+				<!--  -->
+				{{> cards/wocommerce-pagination }}
+				
+			</div>
+		</section>
+	</main>
+	<!-- Footer -->
+	{{> footer/footer }}
+</body>
+
+</html>

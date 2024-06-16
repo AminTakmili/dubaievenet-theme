@@ -1,0 +1,17 @@
+@layer components{
+    
+    .blog-pagination {
+        @apply flex flex-row gap-x-2 rounded-md ;
+
+        .page-numbers {
+            @apply  inline-flex items-center justify-center w-10 h-10  text-sm font-semibold text-gray-900 rounded-full ring-1 ring-gray-200 hover:bg-primary-100 hover:ring-primary focus:outline-offset-0 duration-150;
+
+            &.current {
+                @apply cursor-not-allowed bg-primary px-4 py-2 text-sm font-semibold text-white ring-1 ring-primary;
+            }
+            &.next{
+                @apply hidden
+            }
+        }
+    }
+}

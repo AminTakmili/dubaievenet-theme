@@ -5,14 +5,22 @@
 
 
 
-//theme
+//components
 @import 'fonts';
-@import 'components/public';
 @import 'components/header';
+@import 'components/footer';
+@import 'components/public';
 @import 'components/home';
 @import 'components/products';
-@import 'components/footer';
+@import 'components/blog';
+
+//module
 @import 'components/categories';
+@import 'components/breadCrumbs';
+@import 'components/product_comments';
+@import 'components/show_more';
+@import 'components/blog_pagination';
+@import 'components/blog_comments';
 
 
 @import '~swiper/swiper-bundle.min.css';

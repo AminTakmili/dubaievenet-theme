@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+{{> header/head title="دبی ایونت, مجری فروش کنسرت های دبی" }}
+
+<body>
+    <!-- Navbar -->
+    {{> header/navbar }}
+
+    <!-- Main Content -->
+    <main>
+        <!--  breadCrumbs -->
+        <section>{{> cards/breadCrumbs }}</section>
+        <!--  /breadCrumbs -->
+        <section id="home-slider">
+            <div class="container  lg:mb-12 ">
+                <div class="swiper product-slider rounded-3xl shadow-lg mt-1">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide ">
+                            <video class="w-full h-auto" autoplay="true" width="1170" height="AUTO">
+                                <source src="{{ webRoot }}/assets/images/video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="swiper-slide ">
+                            <a href="#">
+                                <img class="home-slider-img lg:h-auto h-48 md:h-68 sm:h-auto w-full object-cover object-center rounded-3xl"
+                                    loading="lazy" src="{{webRoot}}/assets/images/product/slider-1.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next hidden lg:flex"></div>
+                    <div class="swiper-button-prev -block hidden lg:flex"></div>
+                    <div class="swiper-pagination bottom-0"></div>
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section>
+            <div class="container">
+                <div class="grid lg:grid-cols-3 grid-cols-1 gap-4">
+                    <div class="lg:col-span-2 lg:-translate-y-[200px] relative z-10">
+                        <!-- اطلاعات اولیه محصول-->
+                        <div class="product-info flex flex-row lg:items-start items-center lg:mt-0 mt-8 justify-start gap-x-4 mb-8  lg:pr-16">
+                            <a href="#" title="عنوان محصول">
+                                <img class="w-40 lg:h-[285px] h-[200px] object-cover object-center rounded-2xl lg:shadow-2xl ring-2 ring-white"
+                                    src="{{ webRoot }}/assets/images/product/shajarian-web.jpg" alt="عنوان محصول">
+                            </a>
+                            <div class="info lg:pt-40">
+                                <h1 class="text-gray-700 text-xl font-semibold mb-1">کنسرت همایون شجربان و انوشیروان
+                                    رواحنی در دبی</h1>
+                                <div
+                                    class="date flex flex-row items-center justify-start gap-x-2 text-xs text-gray-500 mb-2">
+                                    <p> 28 خرداد 1403 </p>
+                                    <p> - </p>
+                                    <p class="font-sans " dir="ltr"> 28 june 2024 </p>
+                                </div>
+                                <p class="flex flex-row text-sm text-secondary-800 gap-x-1 items-center justify-start ">
+                                    <span class="text-xs">{{> svgs/location }}</span>
+                                    <span>دبی آرنا</span>
+                                </p>
+                                <div class="tag mt-2">
+                                    <a class="bg-[#64b010] pb-1  text-white fon px-2  text-sm rounded" href="#">دبی</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- variation mobile -->
+                        <div class="lg:hidden block mb-4">  
+                            {{> cards/variablesList }}   
+                        </div>
+                        <div class="lg:hidden block">  
+                            {{> cards/sidebar-singer }}  
+                        </div>
+                        <hr class="lg:hidden block my-4">
+                        <!-- /variation mobile -->
+                        <!-- در باره ایونت -->
+                        <div class="bg-white p-3 rounded-xl border border-gray-200">
+                            <h2 class="text-primary text-xl font-semibold">درباره کنسرت</h2>
+                            <div class="html-content">
+                                <p>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک
+                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <!-- شرایط و قوانین-->
+                        <div class="bg-white p-3 rounded-xl border border-gray-200">
+                            <h2 class="text-primary text-xl font-semibold"> شرایط و قوانین روداد </h2>
+                            <div class="html-content">
+                                <p>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک
+                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                </p>
+                                <p>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک
+                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                </p>
+                                <p>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک
+                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                </p>
+                                <p>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک
+                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                </p>
+                                <p>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک
+                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <!-- شرایط و قوانین-->
+                        <div class="bg-white p-3 rounded-xl border border-gray-200">
+                            <h2 class="text-primary text-xl font-semibold"> نحوه دسترسی به این رویداد </h2>
+                            <div class="html-content">
+                                <p> <strong>با ماشین : </strong>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک
+                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                </p>
+                                <p><strong>با وسایل حمل نقل عمومی : </strong>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک
+                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                </p>
+                                <p><strong>با تاکسی</strong>
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک
+                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="bg-white p-3 rounded-xl border border-gray-200">
+                           <div class="flex flex-row items-center justify-between mb-4">
+                            <h2 class="text-primary text-xl font-semibold"> موقعیت مکانی این رویداد بر روی نقشه </h2>
+                            <a href="#"
+                                class="text-secondary-600 border border-secondary-600 hover:bg-secondary-600 hover:text-white px-3 py-2  text-sm rounded-lg inline-block ">مسیریابی
+                                با گوگل</a>
+                           </div>
+                           
+
+                            {{> cards/product-map-card }}
+
+                        </div>
+
+                    </div>
+                    <div class="col-span-1">
+                        <div class="sticky top-24">
+                          <div class="lg:block hidden">  
+                                {{> cards/variablesList }} 
+                                {{> cards/sidebar-singer }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- divider -->
+        <section id="events" >
+            <div class="container py-4">
+                <div class="divider"></div>
+            </div>
+        </section>
+        <!-- comments -->
+        <section>
+            <div class="container">
+                {{> cards/product-comment }}
+            </div>
+        </section>
+        <!-- comments -->
+
+    </main>
+    <!-- Footer -->
+    {{> footer/footer }}
+</body>
+
+</html>

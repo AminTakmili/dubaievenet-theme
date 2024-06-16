@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+{{> header/head title="دبی ایونت, مجری فروش کنسرت های دبی" }}
+
+<body>
+	<!-- Navbar -->
+	{{> header/navbar }}
+	<!-- Main Content -->
+	<main>
+        <!--  breadCrumbs -->
+        <section>{{> cards/breadCrumbs  }}</section>
+		<!--  /breadCrumbs -->
+		<section id="blog-category" class="bg-white py-4">
+			<div class="container">
+				<!-- All category -->
+				 <ul class="blog-category-list-row">
+					<li><a href="#">دسته بندی بلاگ</a></li>
+					<li><a href="#">دسته بندی</a></li>
+					<li><a href="#">دسته بندی بلاگ ها</a></li>
+					<li><a href="#">دسته بندی بلاگ </a></li>
+					<li><a href="#">دسته  بلاگ </a></li>
+					<li><a href="#">بندی  بلاگ </a></li>
+				 </ul>
+				<!--  -->
+				<div class="grid lg:grid-cols-4 gap-4">
+					<div class="lg:col-span-3">
+						<h1 class="text-4xl my-8"> دسته بندی مقالات </h1>
+						<!-- blog list card -->
+						<div class="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+							{{> cards/blog-card img="{{webRoot}}/assets/images/blog/1.webp"  }}
+							{{> cards/blog-card img="{{webRoot}}/assets/images/blog/2.webp"  }}
+							{{> cards/blog-card img="{{webRoot}}/assets/images/blog/3.webp"  }}
+							{{> cards/blog-card img="{{webRoot}}/assets/images/blog/4.webp"  }}
+							{{> cards/blog-card img="{{webRoot}}/assets/images/blog/1.webp"  }}
+							{{> cards/blog-card img="{{webRoot}}/assets/images/blog/2.webp"  }}
+						</div>
+						<!-- blog list card -->
+						 <!-- blog category pagiatin -->
+						  {{> cards/blog-pagination  }}
+						 <!-- /blog category pagiatin -->
+					</div>
+					<div class="lg:col-span-1">
+						
+						{{> cards/blog-catgeoies }}
+						{{> cards/blog-most-viewed }}
+					</div>
+				</div>
+				
+			</div>
+		</section>
+	</main>
+	<!-- Footer -->
+	{{> footer/footer }}
+</body>
+
+</html>

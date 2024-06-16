@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+{{> header/head title="دبی ایونت, مجری فروش کنسرت های دبی" }}
+
+<body>
+	<!-- Navbar -->
+	{{> header/navbar }}
+	<!-- Main Content -->
+	<main>
+		<!--  breadCrumbs -->
+		<section>{{> cards/breadCrumbs }}</section>
+		<!--  /breadCrumbs -->
+		<section id="blog-category" class="bg-white py-4">
+			<div class="container">
+				<div class="grid lg:grid-cols-4 gap-4">
+					<div class="lg:col-span-3">
+						<h1 class="text-2xl font-semibold mt-8 mb-1 text-primary"> جزییات مقاله </h1>
+						<span class="date text-gray-500 text-sm mb-4 block">28 خرداد 1403</span>
+						<!-- unique image -->
+						<img src="{{ webRoot }}/assets/images/blog/blog-detail.webp"
+							class="block aspect-[16/9] rounded-2xl" alt="">
+						<div class="date-view flex flex-row items-center justify-between">
+							<ul class="categories">
+								<li><a href="#">مقاله</a></li>
+								<li><a href="#">تفریحات</a></li>
+								<li><a href="#">بلاگ</a></li>
+							</ul>
+							<div class="view my-3"> 10396 {{> svgs/view }}</div>
+						</div>
+
+						<!-- blog-content -->
+						{{> cards/blog-content  }}
+						<!-- /blog-content -->
+
+						<div class="divider my-8"></div>
+						<!-- blog-comment -->
+						{{> cards/blog-comments  }}
+						<!-- /blog-comment -->
+
+						<!-- blog-add-content -->
+						{{> cards/blog-add-comments  }}
+						<!-- blog-add-content -->
+					</div>
+					<div class="lg:col-span-1">
+						<div class="sticky top-24">
+							{{> cards/blog-catgeoies }}
+							{{> cards/blog-most-viewed }}
+						</div>
+						
+					</div>
+				</div>
+
+			</div>
+		</section>
+	</main>
+	<!-- Footer -->
+	{{> footer/footer }}
+</body>
+
+</html>
