@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+{{> header/head title="ارور 404 - صفحه مورد نظر یافت نشد" }}
+
+<body>
+    <!-- Navbar -->
+    {{> header/navbar }}
+
+    <!-- Main Content -->
+    <main>
+        <!--  breadCrumbs -->
+        <section>{{> cards/breadCrumbs }}</section>
+        <!--  /breadCrumbs -->
+        <section id="product-category" class="bg-white py-4">
+            <div class="container">
+                <div class="flex flex-col items-center justify-center py-10">
+                    <h1 class="font-bold text-gray-400 text-4xl">خطای 404</h1>
+                    <p class="my-2 text-gray-700"> صفحه مورد نظر یافت نشد </p>
+                    <img class="max-w-80 block my-10" src="{{ webRoot }}/assets/images/404.jpg" alt="">
+                    <p class="text-center">متاسفم، اما صفحه مورد نظر شما توسط یک هیولا خورده شده است.
+                        <br>
+                        به تیم فنی ما اطلاع داده شده و به زودی او را می گیرند.
+                    </p>
+                    <button class="px-8 py-3 bg-primary text-white rounded-lg shadow-lg mt-6">بازگشت به خانه</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    {{> footer/footer }}
+</body>
+
+</html>

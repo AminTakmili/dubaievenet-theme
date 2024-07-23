@@ -3,22 +3,17 @@
     <div class="container py-4">
         <!-- navbar -->
         <nav class="desktop-nav flex flex-row items-center justify-between">
-            <!-- <button class="text-gray-600 px-2 lg:hidden mobile-menu-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6 menu-ii">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6 close-ii hidden">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-
-            </button> -->
+            <button class="text-gray-600 px-2 lg:hidden mobile-menu-icon">
+                {{> svgs/menu }}
+                {{> svgs/back }}
+            </button>
+            <button class="text-gray-600 px-2 lg:hidden mobile-search-iocn mr-2">
+                <span class="block w-6">{{> svgs/search }}</span>
+            </button>
             <div class="desktop-nav-logo lg:block hidden ml-8">
                 <a href="">
-                    <!-- <img class=" w-20 lg:w-36" src="{{webRoot}}/assets/images/logo-header.png"> -->
-                    <img class="w-40" src="{{webRoot}}/assets/images/logo.png">
+                   
+                    <img class="w-40" src="{{webRoot}}/assets/images/logo.png" alt="">
                 </a>
             </div>
             <div class="desktop-nav-menu-item flex-grow-0 lg:flex-grow  hidden lg:block">
@@ -43,18 +38,18 @@
                     </li> -->
                 </ul>
             </div>
-            <div class="desktop-nav-logo flex flex-grow flex-row items-center justify-center lg:hidden">
+            <div class="desktop-nav-logo flex flex-grow flex-row items-center justify-end lg:hidden">
                 <a href="/" >
                     <!-- <img class=" w-18 " src="{{webRoot}}/assets/images/logo-header.png"> -->
                     <img class="w-40" src="{{webRoot}}/assets/images/logo.png">
                 </a>
             </div>
             <!-- search-block -->
-            <div class="search-block">
+            <div class="search-block lg:block hidden">
                 {{> header/header-search  }}
             </div>
             <!-- /search-block -->
         </nav>
     </div>
-
 </header>
+{{> header/mobileNav }}

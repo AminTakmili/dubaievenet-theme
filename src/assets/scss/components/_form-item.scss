@@ -1,0 +1,11 @@
+@layer components{
+    .form-item {
+        input {
+            @apply w-full border border-gray-300 rounded-lg focus:outline-2 focus:outline-blue-200 p-2;
+        }
+
+        textarea {
+            @apply w-full border border-gray-300 rounded-lg focus:outline-2 focus:outline-blue-200 p-2;
+        }
+    }
+}

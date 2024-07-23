@@ -1,7 +1,7 @@
 
-import Swiper, { Navigation, Pagination, Autoplay, Scrollbar, Thumbs, EffectCards } from 'swiper';
+import Swiper, { Navigation, Pagination, Autoplay, Scrollbar, Thumbs, EffectCards , autoHeight } from 'swiper';
 
-Swiper.use([Navigation, Pagination, Autoplay, Scrollbar, Thumbs,EffectCards]);
+Swiper.use([Navigation, Pagination, Autoplay, Scrollbar, Thumbs,EffectCards , autoHeight]);
 
 (function () {
 
@@ -57,6 +57,7 @@ Swiper.use([Navigation, Pagination, Autoplay, Scrollbar, Thumbs,EffectCards]);
     const productSlider = new Swiper(".product-slider", {
 
         perSlideRotate: 4,
+        autoHeight: true,
         spaceBetween: 10,
         navigation: {
             nextEl: ".swiper-button-next",

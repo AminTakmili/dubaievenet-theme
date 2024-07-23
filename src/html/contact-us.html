@@ -5,12 +5,96 @@
 <body>
 	<!-- Navbar -->
 	{{> header/navbar }}
-
 	<!-- Main Content -->
 	<main>
         <!--  breadCrumbs -->
         <section>{{> cards/breadCrumbs  }}</section>
 		<!--  /breadCrumbs -->
+		<section id="contact-us" class="bg-white py-8">
+			 <div class="container">
+
+				<div class="grid lg:grid-cols-2 gap-8">
+					<div class="col-span-1">
+						<h1 class="title-theme-2 text-2xl my-4"> راه های ارتباط با ما</h1>
+
+						<div class="divide-y divide-gray-200">
+							<!-- اطلاعات تماس -->
+							<div class="block-contacts py-4">
+								<p class="flex flex-row items-center gap-x-2 text-gray-600"> 
+									<span class="w-6">{{> svgs/phone }}</span>
+									<span class="text-lg">تماس تلفنی با مشاوران ما:</span>  
+								</p>
+								<ul class="flex flex-row flex-wrap items-center justify-start mt-2">
+									<li class="after:text-xl after:content-['-'] after:text-gray-500 after:mx-2 after:last:hidden"><a  href="tel:+982191303797" dir="ltr" class="text-right text-secondary hover:text-secondary-500">021-91303797</a></li>
+									<li class="after:text-xl after:content-['-'] after:text-gray-500 after:mx-2 after:last:hidden"><a  href="tel:+982191303797" dir="ltr" class="text-right text-secondary hover:text-secondary-500">021-91303797</a></li>
+								</ul>
+							</div>
+							<!-- واتس اپ -->
+							<div class="block-contacts py-4">
+								<p class="flex flex-row items-center gap-x-2 text-gray-600"> 
+									<span class="w-6 fill-gray-600">{{> svgs/whatsapp }}</span>
+									<span class="text-lg">مشاوره در واتس اپ:</span>  
+								</p>
+								<ul class="flex flex-row flex-wrap items-center justify-start mt-2">
+									<li class="after:text-xl after:content-['-'] after:text-gray-500 after:mx-2 after:last:hidden"><a  href="tel:+982191303797" dir="ltr" class="text-right text-secondary hover:text-secondary-500">021-91303797</a></li>
+									<li class="after:text-xl after:content-['-'] after:text-gray-500 after:mx-2 after:last:hidden"><a  href="tel:+982191303797" dir="ltr" class="text-right text-secondary hover:text-secondary-500">021-91303797</a></li>
+								</ul>
+							</div>
+							<!--  پست الکترونیک -->
+							<div class="block-contacts py-4">
+								<p class="flex flex-row items-center gap-x-2 text-gray-600"> 
+									<span class="w-6">{{> svgs/mail }}</span>
+									<span class="text-lg">پست الکترونیک:</span>  
+								</p>
+								<ul class="flex flex-row flex-wrap items-center justify-start mt-2">
+									<li class="after:text-xl after:content-['-'] after:text-gray-500 after:mx-2 after:last:hidden"><a  href="mail" dir="ltr" class="text-right text-secondary hover:text-secondary-500">mail@example.com</a></li>
+								</ul>
+							</div>
+							<!--  شبکه های اجتماعی -->
+							<div class="block-contacts py-4">
+								<p class="flex flex-row items-center gap-x-2 text-gray-600"> 
+									<span class="text-lg"> ما را در شبکه های اجتماعی دنبال کنید</span>  
+								</p>
+								<ul class="flex flex-row gap-x-4 items-center justify-start mt-4">
+									<li><a title="اینستاگرام " href="#" class="w-6 h-6 fill-gray-600 hover:fill-primary-600">{{> svgs/instagram }}</a></li>
+									<li><a title="واتس اپ" href="#" class="w-6 h-6 fill-gray-600 hover:fill-lime-600">{{> svgs/whatsapp }}</a></li>
+									<li><a title="یوتیوب" href="#" class="w-6 h-6 fill-gray-600 hover:fill-red-600">{{> svgs/youtube }}</a></li>
+									<li><a title="آپارات" href="#" class="w-6 h-6 fill-gray-600 hover:fill-red-700">{{> svgs/aparat }}</a></li>
+									<li><a title="لینکدین" href="#" class="w-6 h-6 fill-gray-600 hover:fill-blue-800">{{> svgs/linkedin }}</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-span-1">
+						<h2 class="title-theme-2 text-2xl my-4"> فرم ارتبط با ما </h2>
+						<!-- فرم تماس با ما -->
+						<form action="">
+							<div class="grid lg:grid-cols-2 grid-cols-1 gap-4">
+								<div class="md:col-span-2">
+									<div class="form-item mb-2">
+										<span class="title mb-2 block"> پیام شما </span>
+										<textarea placeholder="" rows="4"></textarea>
+									</div>
+								</div>
+								<div class="col-span-1">
+									<div class="form-item mb-2">
+										<span class="title mb-2 block"> نام و نام خانوادگی </span>
+										<input type="text" placeholder="مثلا : امین راضایی">
+									</div>
+								</div>
+								<div class="col-span-1">
+									<div class="form-item mb-2">
+										<span class="title mb-2 block"> پست الکترونیک </span>
+										<input type="email" placeholder="name@example.com">
+									</div>
+								</div>
+							</div>
+							<button class="px-8 py-3 bg-primary text-white rounded-lg shadow-lg mt-2">ثبت فرم</button>
+						</form>
+					</div>
+				</div>
+			 </div>
+		</section>
 	</main>
 	<!-- Footer -->
 	{{> footer/footer }}

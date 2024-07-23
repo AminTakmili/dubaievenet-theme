@@ -1,9 +1,9 @@
 @layer components {
     .blog-category-list-row{
-        @apply flex flex-row items-center justify-start flex-wrap gap-4 mt-6;
+        @apply flex flex-row items-center justify-start flex-wrap gap-2 mt-6;
         li {
             a{
-                @apply px-3 py-2 shadow-lg text-sm text-gray-600 border border-gray-200 rounded-lg duration-300 ;
+                @apply px-3 py-2 shadow-lg lg:text-sm text-xs text-gray-600 border border-gray-200 rounded-lg duration-300 block ;
                 &:hover{
                     @apply border-secondary-600 text-secondary shadow-secondary-100;
                 }

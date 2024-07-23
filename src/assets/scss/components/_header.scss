@@ -36,7 +36,7 @@
 
 
     .menu-sidebar {
-        @apply bg-primary bg-opacity-0 z-20 duration-150 h-full w-full fixed invisible;
+        @apply bg-gray-700 bg-opacity-0 z-20 duration-150 h-full w-full fixed invisible;
 
         .item-menu {
             @apply translate-x-72 duration-300;
@@ -50,18 +50,6 @@
             }
         }
 
-        nav {
-            &>ul {
-                &>li {
-                    @apply text-gray-700 flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold;
-                }
-
-                //hover:text-indigo-600 hover:bg-gray-50
-                .active {
-                    // @apply bg-gray-50 text-indigo-600 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold;
-                }
-            }
-        }
     }
 
     #site-header {
@@ -87,7 +75,7 @@
     .search-form{
         @apply flex flex-row border border-gray-200 shadow-lg shadow-gray-100 min-w-80 px-4 py-2 rounded-full;
         svg{
-            @apply text-gray-400
+            @apply text-gray-400 w-6 block;
         }
         input{
             @apply mr-3 outline-none flex-grow pl-4 text-sm bg-transparent; 
