@@ -8,8 +8,8 @@
 
 <script>
     var greenIcon = L.icon({ //add this new icon
-        // iconUrl: '{{webRoot}}/assets/images/map-marker.png',
-        // shadowUrl: '{{webRoot}}/assets/images/marker-shadow.png',
+        iconUrl: '{{webRoot}}/assets/images/map-marker.png',
+        shadowUrl: '{{webRoot}}/assets/images/marker-shadow.png',
         iconSize: [60, 60], // size of the icon
         shadowSize: [60, 60], // size of the shadow
         iconAnchor: [30, 58], // point of the icon which will correspond to marker's location
@@ -26,5 +26,5 @@
     L.marker([25.076177, 55.138908]).addTo(map)
         .bindPopup('<p class="text-center iransans font-medium text-blue"> دبی آرنا - محل بزگرازی کنسرت همایون</p>')
         .openPopup()
-        .setIcon(greenIcon);
+        // .setIcon(greenIcon);
 </script>

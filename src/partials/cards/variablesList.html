@@ -1,11 +1,12 @@
 <div class="ticket-list bg-white border border-gray-200 rounded-xl ">
-    <header>
+    <header class="flex flex-row gap-x-2 items-center justify-between">
+        <h2 class="text-primary text-xl font-semibold relative pr-4 after:content-[''] after:top-1 after:h-6 after:w-1 after:absolute after:-right-0 after:bg-primary">بلیط ها</h2>
         <div class="time flex flex-row gap-x-2 items-center justify-start mx-2">
-            <div class="text-white bg-secondary-500 p-2 rounded-lg my-2">{{> svgs/calender  }}</div>
-            <div class="text-xs text-gray-500 flexf">
+            <div class="text-xs text-gray-500 text-left">
                 <p> 28 خرداد 1403 </p>
                 <p class="font-sans " dir="ltr"> 28  june 2024    </p>
             </div>
+            <div class="text-white bg-secondary-600 p-2 rounded-lg my-2">{{> svgs/calender  }}</div>
         </div>
     </header>
     <hr>

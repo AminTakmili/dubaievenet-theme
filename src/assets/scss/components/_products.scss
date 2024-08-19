@@ -18,4 +18,13 @@
             @apply w-6 text-center;
         }
     }
+    .product-box{
+        @apply bg-white p-3 rounded-xl border border-gray-200;
+        .product-box-title{
+            @apply text-primary text-2xl font-semibold relative mt-2 mb-4;
+            &:before{
+                @apply content-[""] top-1 h-6 w-1 absolute -right-3 bg-primary;
+            }
+        }
+    }
 }

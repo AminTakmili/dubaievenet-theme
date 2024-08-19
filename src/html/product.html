@@ -39,12 +39,13 @@
                 <div class="grid lg:grid-cols-3 grid-cols-1 gap-4">
                     <div class="lg:col-span-2 lg:-translate-y-[200px] relative z-10">
                         <!-- اطلاعات اولیه محصول-->
-                        <div class="product-info flex flex-row lg:items-start items-center lg:mt-0 mt-8 justify-start gap-x-4 mb-8  lg:pr-16">
+                        <div
+                            class="product-info flex flex-row lg:items-start items-center lg:mt-0 mt-8 justify-start gap-x-4 mb-8  lg:pr-16">
                             <a href="#" title="عنوان محصول">
                                 <img class="w-40 lg:h-[285px] h-[200px] object-cover object-center rounded-2xl lg:shadow-2xl ring-2 ring-white"
                                     src="{{ webRoot }}/assets/images/product/shajarian-web.jpg" alt="عنوان محصول">
                             </a>
-                            <div class="info lg:pt-40">
+                            <div class="info lg:pt-42">
                                 <h1 class="text-gray-700 text-xl font-semibold mb-1">کنسرت همایون شجربان و انوشیروان
                                     رواحنی در دبی</h1>
                                 <div
@@ -62,108 +63,61 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- variation mobile -->
-                        <div class="lg:hidden block mb-4">  
-                            {{> cards/variablesList }}   
+                        <div class="lg:hidden block mb-4">
+                            {{> cards/variablesList }}
                         </div>
-                        <div class="lg:hidden block">  
-                            {{> cards/sidebar-singer }}  
+                        <div class="lg:hidden block">
+                            {{> cards/sidebar-singer }}
                         </div>
                         <hr class="lg:hidden block my-4">
                         <!-- /variation mobile -->
-                        <!-- در باره ایونت -->
-                        <div class="bg-white p-3 rounded-xl border border-gray-200 mb-4">
-                            <h2 class="text-primary text-xl font-semibold">درباره کنسرت</h2>
-                            <div class="html-content">
-                                <p>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک
-                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                                </p>
-                            </div>
-                        </div>
-                       
-                        <!-- شرایط و قوانین-->
-                        <div class="bg-white p-3 rounded-xl border border-gray-200 mb-4">
-                            <h2 class="text-primary text-xl font-semibold"> شرایط و قوانین روداد </h2>
-                            <div class="html-content">
-                                <p>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک
-                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                                </p>
-                                <p>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک
-                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                                </p>
-                                <p>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک
-                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                                </p>
-                                <p>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک
-                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                                </p>
-                                <p>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک
-                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                                </p>
-                            </div>
-                        </div>
-                       
-                        <!-- شرایط و قوانین-->
-                        <div class="bg-white p-3 rounded-xl border border-gray-200 mb-4">
-                            <h2 class="text-primary text-xl font-semibold"> نحوه دسترسی به این رویداد </h2>
-                            <div class="html-content">
-                                <p> <strong>با ماشین : </strong>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک
-                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                                </p>
-                                <p><strong>با وسایل حمل نقل عمومی : </strong>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک
-                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                                </p>
-                                <p><strong>با تاکسی</strong>
-                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک
-                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                                </p>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-white p-3 rounded-xl border border-gray-200">
-                           <div class="flex flex-row items-center justify-between mb-4">
-                            <h2 class="text-primary text-xl font-semibold"> موقعیت مکانی این رویداد بر روی نقشه </h2>
-                            <a href="#"
-                                class="text-secondary-600 border border-secondary-600 hover:bg-secondary-600 hover:text-white px-3 py-2  text-sm rounded-lg inline-block ">مسیریابی
-                                با گوگل</a>
-                           </div>
-                           
 
-                            {{> cards/product-map-card }}
+                        <div class="list-of-items top-[60px] lg:top-[275px]  ">
+                            <div class="swiper product-tabbar-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide w-auto">
+                                        <a  href="#productplaceInfo">درباره کنسرت</a>
+                                    </div> 
+                                    <div class="swiper-slide w-auto">
+                                        <a  href="#productlaw">قوانین</a>
+                                    </div> 
+                                    <div class="swiper-slide w-auto">
+                                        <a  href="#productAccess">دسترسی</a>
+                                    </div> 
+                                    <div class="swiper-slide w-auto">
+                                        <a  href="#productPosition">جایگاها</a>
+                                    </div> 
+                                    <div class="swiper-slide w-auto">
+                                        <a  href="#productMap">موقعیت</a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-info">
 
+                            <!-- در باره ایونت -->
+                            {{> products/products-desc }}
+
+                            <!-- شرایط و قوانین-->
+                            {{> products/products-law }}
+
+                            <!-- دسترسی -->
+                            {{> products/products-access }}
+
+                            <!-- جایگاه -->
+                            {{> products/products-position }}
+
+                            <!-- نقشه -->
+                            {{> products/products-map }}
                         </div>
 
                     </div>
                     <div class="col-span-1">
                         <div class="sticky top-24">
-                          <div class="lg:block hidden">  
-                                {{> cards/variablesList }} 
+                            <div class="lg:block hidden">
+                                {{> cards/variablesList }}
                                 {{> cards/sidebar-singer }}
                             </div>
                         </div>
@@ -172,7 +126,7 @@
             </div>
         </section>
         <!-- divider -->
-        <section id="events" >
+        <section id="events">
             <div class="container py-4">
                 <div class="divider"></div>
             </div>

@@ -1,4 +1,9 @@
-<form action="" class="search-form">
-    <span class="icon">{{> svgs/search }}</span>
-    <input type="search" name="q" placeholder="جستجو در رویداد ها">
+<form action="" class="desktop-search search-form relative ">
+    <input type="text" name="q" placeholder="جستجو در رویداد ها">
+    <div class="icon">
+        <div class="search-icon">{{> svgs/search }}</div>
+        <div class="close hidden">{{> svgs/close }}</div>
+        <div class="searching hidden">{{> svgs/loading }}</div>
+    </div>
+    <div class="search-result"></div>
 </form>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+{{> header/head title="دبی ایونت, مجری فروش کنسرت های دبی" }}
+
+<body>
+	<!-- Navbar -->
+	{{> header/navbar }}
+
+	<!-- Main Content -->
+	<main>
+		<!--  breadCrumbs -->
+		<section>{{> cards/breadCrumbs }}</section>
+		<!--  /breadCrumbs -->
+		<section id="product-category" class="bg-white py-4">
+			<div class="container">
+				
+				<h1 class="title-theme-2 text-4xl mt-8 mb-4"> عنوان </h1>
+				<div class="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-2 md:gap-6 gap-3">
+                         {{> cards/city-card title="استانبول" img="/assets/images/city/istanbul.jpg" }} 
+						 {{> cards/city-card title="دبی" img="/assets/images/city/dubai.webp" }} 
+						 {{> cards/city-card title="آنتالیا" img="/assets/images/city/antalya.jpg" }} 
+						 {{> cards/city-card title="وان" img="/assets/images/city/turkey_wan.jpg" }} 
+						 {{> cards/city-card title="تفلیس" img="/assets/images/city/tbilisip.webp" }} 
+						 {{> cards/city-card title="ایروان" img="/assets/images/city/Yerevan.jpg" }} 
+						 {{> cards/city-card title="وان" img="/assets/images/city/turkey_wan.jpg" }} 
+						 {{> cards/city-card title="تفلیس" img="/assets/images/city/tbilisip.webp" }} 
+						 {{> cards/city-card title="ایروان" img="/assets/images/city/Yerevan.jpg" }} 
+                </div>
+			</div>
+		</section>
+	</main>
+	<!-- Footer -->
+	{{> footer/footer }}
+</body>
+
+</html>
+
+

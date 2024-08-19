@@ -72,13 +72,5 @@
             @apply lg:top-[7.8rem] md:top-[5.8rem] top-[3.5rem];
         }
     }
-    .search-form{
-        @apply flex flex-row border border-gray-200 shadow-lg shadow-gray-100 min-w-80 px-4 py-2 rounded-full;
-        svg{
-            @apply text-gray-400 w-6 block;
-        }
-        input{
-            @apply mr-3 outline-none flex-grow pl-4 text-sm bg-transparent; 
-        }
-    }
+   
 }

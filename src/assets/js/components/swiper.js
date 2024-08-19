@@ -1,7 +1,7 @@
 
-import Swiper, { Navigation, Pagination, Autoplay, Scrollbar, Thumbs, EffectCards , autoHeight } from 'swiper';
+import Swiper, { Navigation, Pagination, Autoplay, Scrollbar, Thumbs, EffectCards  } from 'swiper';
 
-Swiper.use([Navigation, Pagination, Autoplay, Scrollbar, Thumbs,EffectCards , autoHeight]);
+Swiper.use([Navigation, Pagination, Autoplay, Scrollbar, Thumbs,EffectCards ]);
 
 (function () {
 

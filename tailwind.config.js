@@ -1,8 +1,10 @@
 module.exports = {
-    content: ['./src/**/*.{html,js}'],
+    content: ['./src/**/*.{html,js,jsx,ts,tsx,scss}'],
+    safelist: ['ring'], 
     theme: {
         extend: {
             colors: {
+                'whatsapp' : "#24CC63",
                 'primary': {
                     'DEFAULT': "#851197",
                     'light': "#fff9ec",
@@ -38,7 +40,9 @@ module.exports = {
             },
             spacing: {
                 '18': '4.5rem',
+                '20':'5rem',
                 '22': '5.5rem',
+                '42': '10.5rem',
                 '68': '17rem',
                 '84': '21rem',
                 '88': '22rem',
@@ -55,8 +59,7 @@ module.exports = {
             },
             boxShadow: {
                 'tabbar': ' 0 -6px 10px 0px rgba(0, 0, 0, 0.05)',
-            }
-            ,
+            },
             order: {
                 '1': '1',
                 '2': '2',

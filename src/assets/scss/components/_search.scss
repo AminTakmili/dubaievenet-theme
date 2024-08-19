@@ -1,0 +1,158 @@
+@layer components {
+    .search-form {
+        @apply flex flex-row border border-gray-200 shadow-lg shadow-gray-100 lg:min-w-80 min-w-60 pr-2 pl-4 py-2 rounded-full;
+
+        .icon {
+            @apply w-6 block;
+        }
+
+        .search-icon {
+            @apply text-gray-400;
+        }
+
+        .close {
+            @apply cursor-pointer;
+        }
+
+        .searching {
+            @apply cursor-not-allowed;
+        }
+
+        input {
+            @apply mr-3 outline-none flex-grow pl-4 text-sm bg-transparent;
+        }
+
+        .search-result {
+            @apply bg-white max-h-[400px] overflow-auto absolute w-full  lg:translate-x-[15px] translate-x-[6px] translate-y-[35px] lg:translate-y-[40px] shadow-2xl rounded ;
+
+            &::-webkit-scrollbar {
+                @apply w-2;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                @apply bg-primary-500 rounded-2xl border-2 border-primary-100 border-solid;
+
+            }
+
+            &::-webkit-scrollbar-track {
+                @apply bg-primary-100 rounded-lg;
+            }
+
+            //.artists
+            .artists {
+                @apply flex flex-row gap-x-1 overflow-x-auto my-2 pr-2 border-b border-b-gray-200;
+
+                &::-webkit-scrollbar {
+                    @apply h-2;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    @apply bg-primary-500 rounded-2xl border-2 border-primary-100 border-solid;
+
+                }
+
+                &::-webkit-scrollbar-track {
+                    @apply bg-primary-100 rounded-lg;
+                }
+
+                .artist-item {
+                    @apply block basis-18 flex-grow-0 flex-shrink-0 cursor-pointer;
+
+                    .img {
+                        @apply w-14 h-14 rounded-full object-cover object-center aspect-[1/1] block mx-auto;
+                    }
+
+                    .name {
+                        @apply text-center text-xs truncate my-2;
+                    }
+
+                    &:hover {
+                        .name {
+                            @apply text-primary-600 font-semibold;
+                        }
+                    }
+                }
+
+            }
+
+            // .city 
+            .city {
+                @apply flex flex-row gap-x-2 overflow-x-auto my-2 pr-2 border-b border-b-gray-200;
+
+                &::-webkit-scrollbar {
+                    @apply h-2;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    @apply bg-primary-500 rounded-2xl border-2 border-primary-100 border-solid;
+
+                }
+
+                &::-webkit-scrollbar-track {
+                    @apply bg-primary-100 rounded-lg;
+                }
+
+                .city-item {
+                    @apply basis-20 flex-grow-0 flex-shrink-0 cursor-pointer;
+
+                    .img {
+                        @apply w-22 h-14 rounded object-cover object-center aspect-[1/1] block mx-auto;
+                    }
+
+                    .name {
+                        @apply text-center text-xs truncate my-2;
+                    }
+
+                    &:hover {
+                        .name {
+                            @apply text-primary-600 font-semibold;
+                        }
+                    }
+                }
+            }
+
+            // .concerts 
+            .concerts {
+                @apply flex flex-col my-2 divide-y divide-gray-200;
+
+                .concert-item {
+                    @apply flex flex-row items-center justify-start gap-x-2 py-2 px-2 cursor-pointer;
+
+                    .img {
+                        @apply w-14 h-20 rounded object-cover object-center aspect-[1/1] block;
+                    }
+
+                    .info {
+
+                        .name {
+                            @apply text-right block text-sm mb-1;
+                        }
+
+                        .date {
+                            @apply text-right block text-xs mb-1 text-gray-500;
+                        }
+                        .status {
+                            @apply inline-block rounded  ;
+                            &.expired{
+                                @apply  px-2 py-[2px] bg-red-50 border border-red-300 text-red-700 text-[10px] ;
+                            }
+                            &.upcoming{
+                                @apply px-2 py-[2px] bg-green-50 border border-green-300 text-green-700 text-[10px] ;
+                            }
+                           
+                        }
+                    }
+
+                    &:hover {
+                        @apply bg-gray-100;
+
+                        .name {
+                            @apply text-primary-600 font-semibold;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

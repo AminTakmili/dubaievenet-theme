@@ -51,7 +51,7 @@ const paths = {
 const wPackConfig = {
   mode: 'development',
   entry: {
-    'libs': [paths.src.scss + '/libs.scss'],
+    // 'libs': [paths.src.scss + '/libs.scss'],
     'theme': [paths.src.js + '/theme.js', paths.src.scss + '/theme.scss']
   },
   output: {

@@ -1,18 +1,18 @@
 <header id="site-header"
-    class="lg:shadow-none shadow-lg block relative z-30 sticky  bg-white/[.85] backdrop-blur-md adminLogin adminLogout ">
-    <div class="container py-4">
+    class="lg:shadow-none shadow-lg block z-30 sticky  bg-white/[.85] backdrop-blur-md adminLogin adminLogout ">
+    <div class="container lg:py-4 py-2">
         <!-- navbar -->
         <nav class="desktop-nav flex flex-row items-center justify-between">
-            <button class="text-gray-600 px-2 lg:hidden mobile-menu-icon">
+            <button class="text-gray-600 px-2 py-3 lg:hidden mobile-menu-icon">
                 {{> svgs/menu }}
                 {{> svgs/back }}
             </button>
-            <button class="text-gray-600 px-2 lg:hidden mobile-search-iocn mr-2">
-                <span class="block w-6">{{> svgs/search }}</span>
+            <button class="text-gray-600 px-2 lg:hidden mobile-search-icon mx-1">
+                <span class="icon-search block w-6">{{> svgs/search }}</span>
+                <span class="close-search w-6 hidden">{{> svgs/close }}</span>
             </button>
             <div class="desktop-nav-logo lg:block hidden ml-8">
                 <a href="">
-                   
                     <img class="w-40" src="{{webRoot}}/assets/images/logo.png" alt="">
                 </a>
             </div>
@@ -38,14 +38,14 @@
                     </li> -->
                 </ul>
             </div>
-            <div class="desktop-nav-logo flex flex-grow flex-row items-center justify-end lg:hidden">
+            <div class="mobile-nav-logo flex flex-grow flex-row items-center justify-end lg:hidden">
                 <a href="/" >
                     <!-- <img class=" w-18 " src="{{webRoot}}/assets/images/logo-header.png"> -->
                     <img class="w-40" src="{{webRoot}}/assets/images/logo.png">
                 </a>
             </div>
             <!-- search-block -->
-            <div class="search-block lg:block hidden">
+            <div class="search-block lg:block hidden lg:flex-grow-0 flex-grow">
                 {{> header/header-search  }}
             </div>
             <!-- /search-block -->
